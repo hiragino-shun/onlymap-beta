@@ -1,6 +1,6 @@
 var osaka = new Array(
-  "/osakal.html",
-  "/osakan.html"
+  "https://hiragino-shun.github.io/osakal.html",
+  "https://hiragino-shun.github.io/osakan.html"
 );
 function random_jump_o() {
   var i = Math.floor(Math.random() * osaka.length);
@@ -8,8 +8,8 @@ function random_jump_o() {
 }
 
 var saitama = new Array(
-  "/saiatamal.html",
-  "/saitaman.html"
+  "https://hiragino-shun.github.io/saiatamal.html",
+  "https://hiragino-shun.github.io/saitaman.html"
 );
 function random_jump_s() {
   var i = Math.floor(Math.random() * saitama.length);
@@ -17,8 +17,8 @@ function random_jump_s() {
 }
 
 var fukuoka = new Array(
-  "/fukuokal.html",
-  "/fukuokan.html"
+  "https://hiragino-shun.github.io/fukuokal.html",
+  "https://hiragino-shun.github.io/fukuokan.html"
 );
 function random_jump_f() {
   var i = Math.floor(Math.random() * fukuoka.length);
