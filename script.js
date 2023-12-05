@@ -1,6 +1,6 @@
 var osaka = new Array(
-  "osakal.html",
-  "osakan.html"
+  "/osakal.html",
+  "/osakan.html"
 );
 function random_jump_o() {
   var i = Math.floor(Math.random() * osaka.length);
@@ -8,8 +8,8 @@ function random_jump_o() {
 }
 
 var saitama = new Array(
-  "saiatamal.html",
-  "saitaman.html"
+  "/saiatamal.html",
+  "/saitaman.html"
 );
 function random_jump_s() {
   var i = Math.floor(Math.random() * saitama.length);
@@ -17,8 +17,8 @@ function random_jump_s() {
 }
 
 var fukuoka = new Array(
-  "fukuokal.html",
-  "fukuokan.html"
+  "/fukuokal.html",
+  "/fukuokan.html"
 );
 function random_jump_f() {
   var i = Math.floor(Math.random() * fukuoka.length);
