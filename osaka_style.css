@@ -1,0 +1,133 @@
+html, body {
+  font-family: 'Hind';
+}
+
+.info{
+	background-color: #0086cc;
+	color: #fffff0;
+	width: 35%;
+	height: 20%;
+	margin-left: -1%;
+	border-radius: 0px 40px 40px 0px;
+}
+
+
+.teisu{
+	font-family: "Oswald";
+	font-size: 150%;	
+	padding-left: 5%; 
+}
+
+.start_name{
+	font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;
+	font-weight: Bold;
+	font-size: 100%;
+	padding-bottom: 3%;
+	padding-left: 5%; 
+}
+
+.stopwatch{
+	background-color: #0086cc;
+	color: #fffff0;
+	width: 35%;
+	height: 12%;
+	border-radius: 0px 40px 40px 0px;
+}
+
+#time{
+	font-family: "Oswald";
+	font-size: 200%;
+}
+
+#start, #stop, #reset{
+	font-family: "Oswald";
+	font-size: 100%;
+	background-color: #fffff0;
+	border-radius: 50px;
+	width: 25%;
+	height: 30%;
+	text-align: center;
+	margin-top: -10%;
+}
+
+#watch{
+	margin-left: 4%;
+}
+
+.hidden {
+  display: none;
+}
+
+#mask, #missionback{
+  background: rgba(255, 255, 255, 0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#modal {
+  background: #0086cc;
+  border: 100px, solid, #ffffff;
+  width: 70%;
+  height: 50%;
+  padding: 24px;
+  border-radius: 20px;
+  color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0 auto;
+  z-index: 2;
+  font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;
+  font-weight: Bold;
+  line-height: 75%;
+  diplay: flex;
+  flex-wrap: wrap;
+}
+
+#mission {
+  background: #0086cc;
+  border: 100px, solid, #ffffff;
+  width: 425px;
+  height: 300px;
+  padding: 24px;
+  border-radius: 20px;
+  color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0 auto;
+  z-index: 2;
+  font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;
+  font-weight: Bold;
+  line-height: 120%;
+}
+
+#rtime{
+	font-size: 30px;
+　 line-height: 100%;
+}
+
+
+
+img{
+	border-radius: 20px;
+}
+
+
+
+button{
+	margin-top: 8%;
+	margin-left: 5%;
+}
+
+.destis{
+	display: flex;
+}
