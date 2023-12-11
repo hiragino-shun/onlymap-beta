@@ -16,6 +16,15 @@ function random_jump_s() {
   location.href = saitama[i];
 }
 
+var kobe = new Array(
+  "kobel.html",
+  "koben.html"
+);
+function random_jump_s() {
+  var i = Math.floor(Math.random() * kobe.length);
+  location.href = kobe[i];
+}
+
 var fukuoka = new Array(
   "fukuokal.html",
   "fukuokan.html"
