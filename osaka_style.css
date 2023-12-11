@@ -5,7 +5,7 @@ html, body {
 .info{
 	background-color: #0086cc;
 	color: #fffff0;
-	width: 35%;
+	width: 40%;
 	height: 20%;
 	margin-left: -1%;
 	border-radius: 0px 40px 40px 0px;
@@ -29,7 +29,7 @@ html, body {
 .stopwatch{
 	background-color: #0086cc;
 	color: #fffff0;
-	width: 35%;
+	width: 40%;
 	height: 12%;
 	border-radius: 0px 40px 40px 0px;
 }
@@ -42,7 +42,7 @@ html, body {
 #start, #stop, #reset{
 	font-family: "Oswald";
 	font-size: 100%;
-	background-color: #fffff0;
+	background-color: #ddf6f2;
 	border-radius: 50px;
 	width: 25%;
 	height: 30%;
@@ -58,7 +58,7 @@ html, body {
   display: none;
 }
 
-#mask, #missionback{
+#mask, #missionback, #apbigmap1{
   background: rgba(255, 255, 255, 0.7);
   position: fixed;
   top: 0;
@@ -68,11 +68,11 @@ html, body {
   z-index: 1;
 }
 
-#modal {
+#modal{
   background: #0086cc;
   border: 100px, solid, #ffffff;
   width: 70%;
-  height: 50%;
+  height: 65%;
   padding: 24px;
   border-radius: 20px;
   color: white;
@@ -85,16 +85,16 @@ html, body {
   z-index: 2;
   font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;
   font-weight: Bold;
-  line-height: 75%;
+  line-height: 80%;
   diplay: flex;
   flex-wrap: wrap;
 }
 
-#mission {
+#mission, #bigmap {
   background: #0086cc;
   border: 100px, solid, #ffffff;
   width: 425px;
-  height: 300px;
+  height: 350px;
   padding: 24px;
   border-radius: 20px;
   color: white;
@@ -130,4 +130,113 @@ button{
 
 .destis{
 	display: flex;
+}
+
+
+#ReturnToOrigin{
+	background-color: #0086cc;
+	position: absolute;
+  	z-index: -1;
+  	top: 41%;
+  	left: 0%;
+  	width: 40%;
+	height: 50px;
+	border-radius: 0px 40px 40px 0px;
+}
+
+#origin, #apbigmap{
+	font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;
+	font-weight: Bold;
+	background-color: #fffff0;
+	border-radius: 20px;
+	width: 125px;
+	height: 50%;
+	top: 50%;
+   transform: translate(0, -50%);
+}
+
+#btn3{
+	background-color: #ddf6f2;
+	color: #0086cc;
+	font-family: "Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;
+	font-weight: Bold;
+	width: 100%;
+	border-radius: 10px;
+	font-size: 75%;
+}
+
+#bigmap {
+  background: #0086cc;
+  border: 100px, solid, #ffffff;
+  width: 425px;
+  height: 300px;
+  padding: 24px;
+  border-radius: 20px;
+  color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0 auto;
+  z-index: 2;
+  font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;
+  font-weight: Bold;
+  line-height: 120%;
+}
+
+#kokowomezase{
+	font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;
+	font-weight: Bold;
+	font-size: 30px;
+	margin-left: 3%;
+}
+
+#round_btn {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fffff0; /* 枠の調整 */
+  border-radius: 50%;  /* 丸みの度合い */
+  background: #0086cc; /* ボタンの背景色 */
+	margin-left: 38%;
+}
+ 
+#round_btn::before, #round_btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3px; /* 棒の幅（太さ） */
+  height: 22px; /* 棒の高さ */
+  background: #fffff0; /* バツ印の色 */
+	
+}
+ 
+#round_btn::before {
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+ 
+#round_btn::after {
+  transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+#mission_bottom{
+	display: flex;
+	margin-bottom: -5%;
+}
+
+#home{
+	width: 50%;
+	height: 8%;
+	border-radius: 20%;
+	background: #0086cc;
+	color: #fffff0;
+	border: 2px solid;
+	border-color: #fffff0;
+	margin-top: 10px;
+	font-family: "Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;
+	font-weight: Bold;
+	font-size: 25px;
 }
