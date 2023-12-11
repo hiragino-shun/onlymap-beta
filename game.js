@@ -24,6 +24,17 @@ function displayTime() {
   timeoutID = setTimeout(displayTime, 10);
 }
 
+
+// ページの読み込みが完了したら時間を進める
+window.addEventListener('load', function(){
+  startButton.disabled = true;
+  stopButton.disabled = false;
+  resetButton.disabled = true;
+  startTime = Date.now();
+  displayTime();
+});
+
+
 // スタートボタンがクリックされたら時間を進める
 startButton.addEventListener('click', () => {
   startButton.disabled = true;
@@ -52,6 +63,8 @@ resetButton.addEventListener('click', function() {
   stopTime = 0;
 });
 
+
+// ストップボタン押下後、フォームを表示するためのプログラム
 const stop = document.getElementById('stop');
 const mask = document.getElementById('mask');
 const modal = document.getElementById('modal');
@@ -67,9 +80,11 @@ mask.addEventListener('click', () => {
 });
 
 
+// 目的地画像を表示するプログラム
 const btn3 = document.getElementById('btn3');
 const missionback = document.getElementById('missionback');
 const mission = document.getElementById('mission');
+const round_btn = document.getElementById('round_btn');
 
 btn3.addEventListener('click', () => {
   missionback.classList.remove('hidden');
@@ -77,6 +92,12 @@ btn3.addEventListener('click', () => {
 });
 
 missionback.addEventListener('click', () => {
+  missionback.classList.add('hidden');
+  mission.classList.add('hidden');
+});
+
+
+round_btn.addEventListener('click', () => {
   missionback.classList.add('hidden');
   mission.classList.add('hidden');
 });
