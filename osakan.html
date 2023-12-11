@@ -2,7 +2,7 @@
 <html lang="ja" >
 <head>
  	<meta charset="UTF-8">
- 	<title>CodePen - A Pen by hiragino</title>
+ 	<title>osakal</title>
  	<link rel="stylesheet" href="osaka_style.css">
  	<title>MapsTestOSAKA</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,43 +10,53 @@
 	<link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@700&family=BIZ+UDPGothic&family=Hind:wght@500&family=M+PLUS+Rounded+1c:wght@100;400&family=Oswald:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-<section id="mission" class="visible">
-<img src='https://maps.googleapis.com/maps/api/streetview?size=640x480&heading=30&fov=90&location=34.706558,135.498656&pitch=25&sensor=true&key=AIzaSyBAvMEKVrBkQ5QH3XaU0IqceRmH3uu9Mbo' alt="NU茶屋町" width=400px height=300px>
-</section>
-<div id="missionback" class="visible"></div>
-<div id="mask" class="hidden"></div>
-<section id="modal" class="hidden">
-	<p>あなたのタイムは<div id="rtime">00:00</div><br><br>タイムを入力してね</p>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe1XmyIP4Cp9fTCwJMpbX8mXB5ykJQU46RGt56mB9xHmqetWQ/viewform?embedded=true" width=80% height=75% frameborder="0" marginheight="0" 		marginwidth="0" bottom="10%">読み込んでいます…</iframe>
-</section>
-	<iframe style="z-index: -1;min-width: 1024px;position: fixed;top:0;left:0;" width="100%" height="100%" src="https://www.google.com/maps/embed?pb=!4v1699927604422!6m8!1m7!1spQRQgyMGHhIfOa-a7WpY5Q!2m2!1d34.70280854441884!2d135.4979007349044!3f169.43814138147934!4f-3.452268975621891!5f0.7820865974627469" frameborder="0" allowfullscreen="true"></iframe>
+	<section id="mission" class="visible">
+		<div id="mission_bottom">
+			<div id="kokowomezase">ここを目指せ！</div>
+			<button id="round_btn"></button>
+		</div>
+		<img src='https://maps.googleapis.com/maps/api/streetview?size=640x480&heading=30&fov=90&location=34.706558,135.498656&pitch=25&sensor=true&key=AIzaSyBAvMEKVrBkQ5QH3XaU0IqceRmH3uu9Mbo' alt="NU茶屋町" width=400px height=300px>
+	</section>
+	<div id="missionback" class="visible"></div>
+	<div id="mask" class="hidden"></div>
+	<section id="modal" class="hidden">
+		<p>あなたのタイムは<div id="rtime">00:00</div><br><br>タイムを入力してね</p>
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe1XmyIP4Cp9fTCwJMpbX8mXB5ykJQU46RGt56mB9xHmqetWQ/viewform?embedded=true" width=80% height=65% frameborder="0" marginheight="0" 		marginwidth="0" bottom="10%">読み込んでいます…
+		</iframe>
+		<a href="https://www.google.com/maps/d/u/0/embed?mid=12NZEH4Z6WVtqMJrco3wLzWI6_7FuzQQ&ehbc=2E312F"><button id="home">もどる</button></a>
+	</section>
+	<a id="streetview">
+		<iframe style="z-index: -1;min-width: 1024px;position: fixed;top:0;left:0;" width="100%" height="100%" src="https://www.google.com/maps/embed?pb=!4v1699927604422!6m8!1m7!1spQRQgyMGHhIfOa-a7WpY5Q!2m2!1d34.70280854441884!2d135.4979007349044!3f169.43814138147934!4f-3.452268975621891!5f0.7820865974627469" frameborder="0" allowfullscreen="true">
+		</iframe>
+	</a>
 	<div class="info" style="z-index: -1;position: fixed;left:1%;top:1%;">
-	<div class="teisu" align="left">START</div>
-	<div class="start_name" align="left">阪急百貨店うめだ本店</div>
-	<div class="destis">
-		<div class="teisu" align="left">DESTINATION</div>
-		<div class="btn-container">
-			<button id="btn3">目的地の画像を表示</button>
+		<div class="teisu" align="left">START</div>
+		<div class="start_name" align="left">阪急百貨店うめだ本店</div>
+		<div class="destis">
+			<div class="teisu" align="left">DESTINATION</div>
+			<div class="btn-container">
+				<button id="btn3">目的地の画像を表示</button>
+			</div>
+		</div>
+		<div class="start_name" align="left">NU茶屋町(にゅーちゃやまち)</div>
+	</div>
+	<div class="stopwatch" style="z-index: -1;position: fixed;left:0%;top:25%;">
+		<div id="watch">
+			<div id="time">00:00</div>
+			<div id="buttons">
+				<input id="start" type="button" value="START">
+      		<input id="stop" type="button" value="STOP">
+      		<input id="reset" type="button" value="RESET">
+   		</div>
 		</div>
 	</div>
-	<div class="start_name" align="left">NU茶屋町(にゅーちゃやまち)</div>
-</div>
-<div class="stopwatch" style="z-index: -1;position: fixed;left:0%;top:25%;">
-	<div id="watch">
-		<div id="time">00:00</div>
-		<div id="buttons">
-			<input id="start" type="button" value="START">
-      	<input id="stop" type="button" value="STOP">
-      	<input id="reset" type="button" value="RESET">
-   	</div>
+	<div id="ReturnToOrigin">
+		<a href="#streetview"><button id="origin">スタート地点に戻る</button></a>
+		<a href="https://www.google.com/maps/d/u/0/embed?mid=12NZEH4Z6WVtqMJrco3wLzWI6_7FuzQQ&ehbc=2E312F" target="_blank"><button id="apbigmap">マップを拡大する</button></a>
 	</div>
-  	<script src='game.js'></script>
-</div>
-  <div class="map"><iframe style="z-index: -1;position: fixed;left:0.5%;bottom:7%;" src="https://www.google.com/maps/d/u/0/embed?mid=1AmAEz9gyYFW6246I3bVugvPYGdypldw&ehbc=2E312F" width="30%" height="40%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" border-radius: 30px;></iframe></div>
-
-<!-- partial -->
-
-
+  	<div class="map"><iframe style="z-index: -1;position: fixed;left:0.5%;bottom:7%;" src="https://www.google.com/maps/d/u/0/embed?mid=1AmAEz9gyYFW6246I3bVugvPYGdypldw&ehbc=2E312F" width="40%" height="40%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" border-radius: 30px;></iframe>
+	</div>
+	<script src='game.js'></script>
 </body>
 </html>
 
