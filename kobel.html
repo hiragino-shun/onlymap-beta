@@ -23,10 +23,10 @@
 		<p>あなたのタイムは<div id="rtime">00:00</div><br><br>タイムを入力してね</p>
 		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc0W-rdyNFEDUa0BAyzciLSqEwnaNgptl2sB_pWhQJb3MJMuA/viewform?embedded=true" width=80% height=65% frameborder="0" marginheight="0" 		marginwidth="0" bottom="10%">読み込んでいます…
 		</iframe>
-		<a href="index.html"><button id="home">もどる</button></a>
+		<a href="index.html"><button id="home">ホーム</button></a>
 	</section>
 	<a id="streetview">
-		<iframe style="z-index: -1;min-width: 1024px;position: fixed;top:0;left:0;" width="100%" height="100%" src="https://www.google.com/maps/embed?pb=!4v1702299892714!6m8!1m7!1sb9XIDM6eEC-v0JTDuHPEnQ!2m2!1d34.68923670245891!2d135.1911193628373!3f221.42274712672256!4f20.30054610701852!5f0.7820865974627469" frameborder="0" allowfullscreen="true">
+		<iframe id="sutori" style="z-index: -1;min-width: 1024px;position: fixed;top:0;left:0;" width="100%" height="100%" src="sv_kobe.html" frameborder="0" style="border: none">
 		</iframe>
 	</a>
 	<div class="info" style="z-index: -1;position: fixed;left:1%;top:1%;">
@@ -52,10 +52,10 @@
 	</div>
 	<script src='game.js'></script>
 	<div id="ReturnToOrigin">
-		<a href="https://hiragino-shun.github.io/onlymap-beta/kobel.html"><button id="origin">スタート地点に戻る</button></a>
+		<input id="origin" type="button" onclick="ReloadSv();" value="スタート地点に戻る">
 		<a href="https://www.google.com/maps/d/u/0/embed?mid=1jxjmapy-Sij9ejMTn8Z8p3gD71hmhEs&ehbc=2E312F" target="_blank"><button id="apbigmap">マップを拡大する</button></a>
 	</div>
-  	<div class="map"><iframe style="z-index: -1;position: fixed;left:0.5%;bottom:7%;" src="https://www.google.com/maps/d/u/0/embed?mid=1jxjmapy-Sij9ejMTn8Z8p3gD71hmhEs&ehbc=2E312F" width="35%" height="40%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" border-radius: 30px;></iframe>
+  	<div class="map"><iframe style="z-index: -1;position: fixed;left:0.5%;bottom:7%;" src="https://www.google.com/maps/d/u/0/embed?mid=1jxjmapy-Sij9ejMTn8Z8p3gD71hmhEs&ehbc=2E312F" width="35%" height="40%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 	</div>
 </body>
 </html>
