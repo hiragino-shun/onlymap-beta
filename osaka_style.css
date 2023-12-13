@@ -240,3 +240,8 @@ button{
 	font-weight: Bold;
 	font-size: 25px;
 }
+
+#mymap{
+  border-radius: 80px;
+  overflow: hidden;
+}
