@@ -148,6 +148,7 @@ button{
 	font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;
 	font-weight: Bold;
 	background-color: #fffff0;
+	margin-left: 20px;
 	border-radius: 20px;
 	width: 125px;
 	height: 50%;
