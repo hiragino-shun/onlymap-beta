@@ -42,3 +42,12 @@ function random_jump_m() {
   var i = Math.floor(Math.random() * kyoto.length);
   location.href = kyoto[i];
 }
+
+var kobe = new Array(
+  "kobel.html",
+  "koben.html"
+);
+function random_jump_k() {
+  var i = Math.floor(Math.random() * kobe.length);
+  location.href = kobe[i];
+}
