@@ -101,3 +101,15 @@ round_btn.addEventListener('click', () => {
   missionback.classList.add('hidden');
   mission.classList.add('hidden');
 });
+
+// ストビューをリロードする関数
+function ReloadSv() {
+  var iframe = document.getElementById('sutori');
+  
+  // フレームをリロード
+   iframe.contentWindow.location.reload(true);
+}
+
+window.addEventListener('load', function () {
+
+});
