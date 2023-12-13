@@ -23,10 +23,10 @@
 		<p>あなたのタイムは<div id="rtime">00:00</div><br><br>タイムを入力してね</p>
 		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe1XmyIP4Cp9fTCwJMpbX8mXB5ykJQU46RGt56mB9xHmqetWQ/viewform?embedded=true" width=80% height=65% frameborder="0" marginheight="0" 		marginwidth="0" bottom="10%">読み込んでいます…
 		</iframe>
-		<a href="index.html"><button id="home">もどる</button></a>
+		<a href="index.html"><button id="home">ホーム</button></a>
 	</section>
-	<a id="sutori">
-		<iframe style="z-index: -1;min-width: 1024px;position: fixed;top:0;left:0;" width="100%" height="100%" src="https://www.google.com/maps/embed?pb=!4v1699927604422!6m8!1m7!1spQRQgyMGHhIfOa-a7WpY5Q!2m2!1d34.70280854441884!2d135.4979007349044!3f169.43814138147934!4f-3.452268975621891!5f0.7820865974627469" frameborder="0" allowfullscreen="true">
+	<a id="streetview">
+		<iframe id="sutori" style="z-index: -1;min-width: 1024px;position: fixed;top:0;left:0;" width="100%" height="100%" src="sv_yokohama.html" frameborder="0" style="border: none">
 		</iframe>
 	</a>
 	<div class="info" style="z-index: -1;position: fixed;left:1%;top:1%;">
@@ -52,8 +52,10 @@
 	</div>
 	<div id="ReturnToOrigin">
 		<a href="https://hiragino-shun.github.io/onlymap-beta/osakan.html"><button id="origin">スタート地点に戻る</button></a>
-		<a href="https://www.google.com/maps/d/u/0/embed?mid=12NZEH4Z6WVtqMJrco3wLzWI6_7FuzQQ&ehbc=2E312F" target="_blank"><button id="apbigmap">マップを拡大する</button></a>
-	</div>
+		<div id="ReturnToOrigin">
+		<input id="origin" type="button" onclick="ReloadSv();" value="スタート地点に戻る">
+		<a href="https://www.google.com/maps/d/u/0/embed?mid=1jxjmapy-Sij9ejMTn8Z8p3gD71hmhEs&ehbc=2E312F" target="_blank"><button id="apbigmap">マップを拡大する</button></a>
+	</div
   	<div class="map"><iframe style="z-index: -1;position: fixed;left:0.5%;bottom:7%;" src="https://www.google.com/maps/d/u/0/embed?mid=1AmAEz9gyYFW6246I3bVugvPYGdypldw&ehbc=2E312F" width="35%" height="40%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" border-radius: 30px;></iframe>
 	</div>
 	<script src='game.js'></script>
