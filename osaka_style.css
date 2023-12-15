@@ -156,7 +156,8 @@ button{
 	border-radius: 0px 40px 40px 0px;
 	font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;
 	font-weight: Bold;
-	font-size: 15px;
+	font-size: 13px;
+	text-align: center;
 }
 
 #origin, #apbigmap{
