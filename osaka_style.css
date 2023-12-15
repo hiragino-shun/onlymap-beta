@@ -146,10 +146,10 @@ button{
 
 #tips{
 	background-color: #0086cc;
-	color: #fffff0
+	color: #fffff0;
 	position: absolute;
   	z-index: -1;
-  	bottom: 2%;
+  	bottom: 95%;
   	left: 0%;
   	width: 35%;
 	height: 40px;
