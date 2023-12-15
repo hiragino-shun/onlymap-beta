@@ -144,6 +144,17 @@ button{
 	border-radius: 0px 40px 40px 0px;
 }
 
+#tips{
+	background-color: #0086cc;
+	position: absolute;
+  	z-index: -1;
+  	bottom: 5%;
+  	left: 0%;
+  	width: 35%;
+	height: 40px;
+	border-radius: 0px 40px 40px 0px;
+}
+
 #origin, #apbigmap{
 	font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;
 	font-weight: Bold;
