@@ -146,6 +146,7 @@ button{
 
 #tips{
 	background-color: #0086cc;
+	color: #fffff0
 	position: absolute;
   	z-index: -1;
   	bottom: 2%;
@@ -153,6 +154,9 @@ button{
   	width: 35%;
 	height: 40px;
 	border-radius: 0px 40px 40px 0px;
+	font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;
+	font-weight: Bold;
+	font-size: 15px;
 }
 
 #origin, #apbigmap{
